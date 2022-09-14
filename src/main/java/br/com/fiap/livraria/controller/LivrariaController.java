@@ -23,8 +23,9 @@ public class LivrariaController {
 
     @GetMapping
     public List<LivroDTO> listarLivros(
-            @RequestParam String titulo
+            @RequestParam(required = false) String titulo
     ){
+        if (titulo == null) titulo = "";
         return livrariaService.listarLivros(titulo);
     }
 

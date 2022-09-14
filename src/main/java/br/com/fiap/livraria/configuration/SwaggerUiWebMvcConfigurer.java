@@ -5,7 +5,6 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-// tag::swagger-ui-configurer[]
 public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
     private final String baseUrl;
 
@@ -28,4 +27,3 @@ public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
                 .setViewName("forward:" + baseUrl + "/swagger-ui/index.html");
     }
 }
-// end::swagger-ui-configurer[]

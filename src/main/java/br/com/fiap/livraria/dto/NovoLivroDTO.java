@@ -4,9 +4,14 @@ import java.math.BigDecimal;
 
 public class NovoLivroDTO {
 
+    private String isbn;
     private String titulo;
     private String autor;
     private BigDecimal preco;
+
+    public String getIsbn(){ return isbn;}
+
+    public void setIsbn(String isbn) { this.isbn = isbn; }
 
     public String getTitulo() {
         return titulo;
