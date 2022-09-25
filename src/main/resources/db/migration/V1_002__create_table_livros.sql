@@ -6,3 +6,7 @@ CREATE TABLE TB_LIVRO(
     preco decimal(6,2) DEFAULT NULL,
     PRIMARY KEY(id)
 );
+
+INSERT INTO TB_LIVRO (isbn, titulo, autor, preco)
+VALUES ( '123123', 'História de uma fala qualquer', 'Willian Andrade', 104.50 ),
+       ('1223422', 'Vivendo em Floripa', 'Hector Morales',303.43);

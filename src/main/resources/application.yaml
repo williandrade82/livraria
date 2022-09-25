@@ -4,8 +4,12 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:~/FIAP/Fase03/livraria/h2database-fiap;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:D:/FIAP/Fase 03/datasource/livraria/h2database-fiap;AUTO_SERVER=TRUE
     username: fiap
-    passsword: fiap
+    password: fiap
     hikari:
       auto-commit: true
+
+jwt:
+  secret: f1apPs3cr47
+  expire: 5
